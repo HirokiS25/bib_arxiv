@@ -1,8 +1,8 @@
 from setuptools import setup
 
 setup(
-    name='bibarxiv',
+    name='bibcrawler',
     version='0.1',
-    install_requires=['arxiv', 'BeautifulSoup', 'json'],
+    install_requires=['bs4', 'json'],
 
 )
