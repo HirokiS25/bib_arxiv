@@ -21,6 +21,7 @@ def parse_from_json():
 def create_bibtex(arxiv_number_list):
     with open(sys.argv[2], mode='w') as output_file:
         hep_url = url_tracer(arxiv_number_list)
+        print(hep_url)
         bibtex = [bibtex_data(hep_url[i]) for i in range(len(arxiv_number_list))]
         output_file.writelines(bibtex)
 
@@ -42,6 +43,7 @@ def url_tracer(arxiv_number):
     max_number = len(arxiv_number)
     print(arxiv_number)
     res = arxiv.query(id_list=arxiv_number)
+    print(res)
     arxiv_url = [res[i].arxiv_url for i in range(max_number)]
     hep_url = [scrape(arxiv_url[i], class_='extra-ref-cite')[0] for i in range(max_number)]
     return hep_url
