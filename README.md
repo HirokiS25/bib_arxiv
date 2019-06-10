@@ -1,7 +1,7 @@
 # bibcrawler
 
 ## install
-`python install setup.py`
+`python setup.py install`
 
 ## use
 `python bibcrawler.py "path/to/json/data" "path/to/output/"`
