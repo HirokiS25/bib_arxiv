@@ -1,5 +1,7 @@
 # bibcrawler
 
+git clone https://github.com/HirokiS25/bibcrawler.git
+
 ## install
 `python setup.py install`
 
