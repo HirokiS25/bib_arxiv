@@ -64,7 +64,7 @@ def makeBibliography(argv):
         print('{} watching..'.format(argv.input))
         try:
             while True:
-                print(argv.input)
+                # print(argv.input)
                 new_time_stump = os.stat(argv.input).st_mtime
                 if time_stump < new_time_stump:
                     print('file is updated')
