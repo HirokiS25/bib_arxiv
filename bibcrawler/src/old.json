@@ -1,0 +1,9 @@
+{
+    "id": 0,
+    "name": "Alice",
+    "attribute": {
+        "gender": "male",
+        "phone": "0123456",
+        "birth": "1999/01/01"
+    }
+}
